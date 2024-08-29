@@ -8,7 +8,7 @@ def generate(length,pass_set):
   return password
 
 def user_input():
-  length + int(input("Enter password length: "))
+  length = int(input("Enter password length: "))
   pass_set = ''
   if input("Include uppercase letters? (y/n): ").lower() == 'y':
     pass_set += string.ascii_uppercase
@@ -17,7 +17,7 @@ def user_input():
   if input("Include numbers? (y/n): ").lower() == 'y':
     pass_set += string.digits
   if input("Include symbols? (y/n): ").lower() == 'y':
-    pass-set += string.punctuation
+    pass_set += string.punctuation
   return length, pass_set
 
 def main():
@@ -28,5 +28,5 @@ def main():
   password = generate(length, pass_set)
   print("Generated password: ", password)
 
-if __name__ == "__main__"
+if __name__ == "__main__":
   main()
