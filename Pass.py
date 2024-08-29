@@ -4,7 +4,7 @@ import string
 def generate(length,pass_set):
   password = ''
   for _ in range(length):
-    password += random.choice(pass-set)
+    password += random.choice(pass_set)
   return password
 
 def user_input():
